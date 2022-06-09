@@ -13,7 +13,7 @@ public class InquisitorArmorModel extends AnimatedGeoModel<InquisitorArmorItem> 
 
     @Override
     public Identifier getTextureLocation(InquisitorArmorItem object) {
-        return new Identifier(PswgExtra.MOD_ID, "textures/models/armor/inquisitor_armor_texture.png");
+        return new Identifier(PswgExtra.MOD_ID, "textures/item/inquisitor_armor_texture.png");
     }
 
     @Override
