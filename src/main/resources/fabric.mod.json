@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "trep.pswgextra.mod.PswgExtra"
+    ],
+    "client": [
+      "trep.pswgextra.mod.PswgExtraClientMod"
     ]
   },
   "mixins": [

@@ -14,6 +14,6 @@ public class ModEntities {
     public static final EntityType<DroidgeneralEntity> DROIDGENERAL = Registry.register(
             Registry.ENTITY_TYPE, new Identifier(PswgExtra.MOD_ID, "droidgeneral"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, DroidgeneralEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.4f, 0.3f)).build());
+                    .dimensions(EntityDimensions.fixed(0.5f, 1.5f)).build());
 
 }
