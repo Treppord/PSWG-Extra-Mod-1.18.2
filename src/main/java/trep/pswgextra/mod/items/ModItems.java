@@ -4,9 +4,11 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import trep.pswgextra.mod.PswgExtra;
+import trep.pswgextra.mod.entity.ModEntities;
 import trep.pswgextra.mod.items.custom.InquisitorArmorItem;
 import trep.pswgextra.mod.items.custom.ModArmorItem;
 
@@ -14,6 +16,10 @@ public class ModItems {
 
 	public static final Item BANTHA_HIDE = registerItem("bantha_hide", 
 		new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+	public static final Item DROIDGENERAL_SPAWN_EGG = registerItem("droidgeneral_spawn_egg",
+					new SpawnEggItem(ModEntities.DROIDGENERAL,0x558e8d, 0x2b1135,
+						new FabricItemSettings().group(ModItemGroup.PSWGEXTRA).maxCount(1)));
 
 
 	public static final Item BESKAR_ALLOY = registerItem("beskar_alloy", 
