@@ -29,7 +29,11 @@ public enum ModArmorMaterial implements ArmorMaterial{
             9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.BESKAR_ALLOY)),
 
     INQUISITOR("inquisitor", 15, new int[]{2, 5, 6, 2},
+            9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.BESKAR_ALLOY)),
+
+    TEMPLEGUARD("templeguard", 15, new int[]{2, 5, 6, 2},
             9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.BESKAR_ALLOY));
+
 
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

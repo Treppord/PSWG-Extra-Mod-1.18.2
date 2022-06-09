@@ -11,6 +11,7 @@ import trep.pswgextra.mod.PswgExtra;
 import trep.pswgextra.mod.entity.ModEntities;
 import trep.pswgextra.mod.items.custom.InquisitorArmorItem;
 import trep.pswgextra.mod.items.custom.ModArmorItem;
+import trep.pswgextra.mod.items.custom.TempleguardArmorItem;
 
 public class ModItems {
 
@@ -137,6 +138,19 @@ public class ModItems {
 					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item INQUISITOR_BOOTS = registerItem("inquisitor_boots",
 			new InquisitorArmorItem(ModArmorMaterial.INQUISITOR, EquipmentSlot.FEET,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+	public static final Item TEMPLEGUARD_HELMET = registerItem("templeguard_helmet",
+			new TempleguardArmorItem(ModArmorMaterial.TEMPLEGUARD, EquipmentSlot.HEAD,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+	public static final Item TEMPLEGUARD_CHESTPLATE = registerItem("templeguard_chestplate",
+			new TempleguardArmorItem(ModArmorMaterial.TEMPLEGUARD, EquipmentSlot.CHEST,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+	public static final Item TEMPLEGUARD_LEGGINGS = registerItem("templeguard_leggings",
+			new TempleguardArmorItem(ModArmorMaterial.TEMPLEGUARD, EquipmentSlot.LEGS,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+	public static final Item TEMPLEGUARD_BOOTS = registerItem("templeguard_boots",
+			new TempleguardArmorItem(ModArmorMaterial.TEMPLEGUARD, EquipmentSlot.FEET,
 					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 
 
