@@ -87,22 +87,22 @@ public class DroidgeneralEntity extends AnimalEntity implements IAnimatable {
 
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.ENTITY_VILLAGER_AMBIENT;
+        return SoundEvents.ENTITY_WANDERING_TRADER_YES;
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {
-        return SoundEvents.ENTITY_VILLAGER_HURT;
+        return SoundEvents.BLOCK_METAL_HIT;
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_VILLAGER_DEATH;
+        return SoundEvents.BLOCK_ANVIL_BREAK;
     }
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {
-        this.playSound(SoundEvents.ENTITY_ZOMBIE_VILLAGER_STEP, 0.15f, 1.0f);
+        this.playSound(SoundEvents.BLOCK_METAL_STEP, 0.15f, 1.0f);
     }
 
 }

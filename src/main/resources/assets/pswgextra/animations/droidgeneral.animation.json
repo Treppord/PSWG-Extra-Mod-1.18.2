@@ -15,7 +15,8 @@
 						},
 						"1.84": {
 							"post": {
-								"vector": [1, 0, 0]
+								"vector": [1, 0, 0],
+								"easing": "easeOutElastic"
 							},
 							"lerp_mode": "catmullrom"
 						},
@@ -112,6 +113,23 @@
 								"vector": [0, 0, 0]
 							},
 							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.24": {
+							"vector": [0, 7.5, 0]
+						},
+						"2.56": {
+							"vector": [0, -5, 0],
+							"easing": "linear"
+						},
+						"3.4": {
+							"vector": [0, 0, 0]
 						}
 					}
 				}
@@ -384,7 +402,7 @@
 		"animation.droidgeneral.shooting": {
 			"animation_length": 4.32,
 			"bones": {
-				"head": {
+				"h_head2": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]

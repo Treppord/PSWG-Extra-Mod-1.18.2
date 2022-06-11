@@ -3,6 +3,8 @@ package trep.pswgextra.mod;
 import net.fabricmc.api.ModInitializer;
 import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
+import trep.pswgextra.mod.block.ModBlocks;
+import trep.pswgextra.mod.block.entity.ModBlockEntities;
 import trep.pswgextra.mod.entity.ModEntities;
 import trep.pswgextra.mod.entity.client.DroidgeneralRenderer;
 import trep.pswgextra.mod.entity.client.armor.InquisitorArmorRenderer;
@@ -27,7 +29,8 @@ public class PswgExtra implements ModInitializer {
 
 	ModItems.registerModItems();
 	ModRegistries.registerModStuffs();
-
+	ModBlocks.registerModBlocks();
+	ModBlockEntities.registerAllBlockEntities();
 
 
 
