@@ -12,6 +12,7 @@ import trep.pswgextra.mod.items.ModItems;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import trep.pswgextra.mod.recipe.ModRecipes;
 import trep.pswgextra.mod.util.ModRegistries;
 
 public class PswgExtra implements ModInitializer {
@@ -31,6 +32,7 @@ public class PswgExtra implements ModInitializer {
 	ModRegistries.registerModStuffs();
 	ModBlocks.registerModBlocks();
 	ModBlockEntities.registerAllBlockEntities();
+	ModRecipes.registerRecipes();
 
 
 

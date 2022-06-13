@@ -3,10 +3,10 @@
 	"item.pswgextra.beskar_alloy": "Beskar Alloy",
 	"itemGroup.pswgextra.pswgextra": "PSWG Extra",
 
-	"item.pswgextra.beskar_helmet": "Beskar Helmet",
-	"item.pswgextra.beskar_chestplate": "Beskar Chestplate",
-	"item.pswgextra.beskar_leggings": "Beskar Leggings",
-	"item.pswgextra.beskar_boots": "Beskar Boots",
+	"item.pswgextra.beskar_helmet": "Beskar Alloy Helmet",
+	"item.pswgextra.beskar_chestplate": "Beskar Alloy Chestplate",
+	"item.pswgextra.beskar_leggings": "Beskar Alloy Leggings",
+	"item.pswgextra.beskar_boots": "Beskar Alloy Boots",
 
 	"item.pswgextra.jedi_helmet": "Jedi Helmet",
 	"item.pswgextra.jedi_chestplate": "Jedi Chestplate",
@@ -20,22 +20,22 @@
 	"item.pswgextra.sith_boots": "Sith Boots",
 	
 	
-	"item.pswgextra.redmando_helmet": "Red Mandalorian Helmet",
-	"item.pswgextra.redmando_chestplate": "Red Mandalorian Chestplate",
-	"item.pswgextra.redmando_leggings": "Red Mandalorian Leggings",
-	"item.pswgextra.redmando_boots": "Red Mandalorian Boots",
+	"item.pswgextra.redmando_helmet": "Super Commando Helmet",
+	"item.pswgextra.redmando_chestplate": "Super Commando Chestplate",
+	"item.pswgextra.redmando_leggings": "Super Commando Leggings",
+	"item.pswgextra.redmando_boots": "Super Commando Boots",
 	
 	
-	"item.pswgextra.bluemando_helmet": "Blue Mandalorian Helmet",
-	"item.pswgextra.bluemando_chestplate": "Blue Mandalorian Chestplate",
-	"item.pswgextra.bluemando_leggings": "Blue Mandalorian Leggings",
-	"item.pswgextra.bluemando_boots": "Blue Mandalorian Boots",
+	"item.pswgextra.bluemando_helmet": "Fett Clan Helmet",
+	"item.pswgextra.bluemando_chestplate": "Fett Clan Chestplate",
+	"item.pswgextra.bluemando_leggings": "Fett Clan Leggings",
+	"item.pswgextra.bluemando_boots": "Fett Clan Boots",
 	
 	
-	"item.pswgextra.cyanmando_helmet": "Cyan Mandalorian Helmet",
-	"item.pswgextra.cyanmando_chestplate": "Cyan Mandalorian Chestplate",
-	"item.pswgextra.cyanmando_leggings": "Cyan Mandalorian Leggings",
-	"item.pswgextra.cyanmando_boots": "Cyan Mandalorian Boots",	
+	"item.pswgextra.cyanmando_helmet": "Death Watch Helmet",
+	"item.pswgextra.cyanmando_chestplate": "Death Watch Chestplate",
+	"item.pswgextra.cyanmando_leggings": "Death Watch Leggings",
+	"item.pswgextra.cyanmando_boots": "Death Watch Boots",
 
 
 	
@@ -50,6 +50,14 @@
 	"item.pswgextra.templeguard_boots": "Jedi Templeguard Boots",
 
 	"block.pswgextra.armor_station": "Armor Station",
+	"block.pswgextra.scrap_metal": "Scrap Metal Block",
+
+	"item.pswgextra.emblem": "Emblem",
+	"item.pswgextra.fett_emblem": "Fett Emblem",
+	"item.pswgextra.death_watch_emblem": "Death Watch Emblem",
+	"item.pswgextra.super_commando_emblem": "Super Commando Emblem",
+
+
 
 	"item.pswgextra.droidgeneral_spawn_egg": "Droid General Spawn Egg"
 }

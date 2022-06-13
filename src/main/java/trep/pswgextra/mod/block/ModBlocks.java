@@ -24,7 +24,10 @@ import java.util.List;
 public class ModBlocks {
 
     public static final Block ARMOR_STATION = registerBlock("armor_station",
-            new ArmorStationBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.PSWGEXTRA);
+            new ArmorStationBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().nonOpaque()), ModItemGroup.PSWGEXTRA);
+
+    public static final Block SCRAP_METAL = registerBlock("scrap_metal",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.PSWGEXTRA);
 
     private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {
         registerBlockItem(name, block, group, tooltipKey);

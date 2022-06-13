@@ -9,8 +9,7 @@ import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 import trep.pswgextra.mod.block.ModBlocks;
 import trep.pswgextra.mod.entity.ModEntities;
 import trep.pswgextra.mod.entity.client.DroidgeneralRenderer;
-import trep.pswgextra.mod.entity.client.armor.InquisitorArmorRenderer;
-import trep.pswgextra.mod.entity.client.armor.TempleguardArmorRenderer;
+import trep.pswgextra.mod.entity.client.armor.*;
 import trep.pswgextra.mod.items.ModItems;
 import trep.pswgextra.mod.screen.ArmorStationScreen;
 import trep.pswgextra.mod.screen.ModScreenHandlers;
@@ -24,6 +23,19 @@ public class PswgExtraClientMod implements ClientModInitializer {
 
         GeoArmorRenderer.registerArmorRenderer(new TempleguardArmorRenderer(), ModItems.TEMPLEGUARD_BOOTS,
                 ModItems.TEMPLEGUARD_LEGGINGS, ModItems.TEMPLEGUARD_CHESTPLATE, ModItems.TEMPLEGUARD_HELMET);
+
+        GeoArmorRenderer.registerArmorRenderer(new BeskaralloyArmorRenderer(), ModItems.BESKAR_BOOTS,
+                ModItems.BESKAR_LEGGINGS, ModItems.BESKAR_CHESTPLATE, ModItems.BESKAR_HELMET);
+
+        GeoArmorRenderer.registerArmorRenderer(new BluemandoArmorRenderer(), ModItems.BLUEMANDO_BOOTS,
+                ModItems.BLUEMANDO_LEGGINGS, ModItems.BLUEMANDO_CHESTPLATE, ModItems.BLUEMANDO_HELMET);
+
+        GeoArmorRenderer.registerArmorRenderer(new CyanmandoArmorRenderer(), ModItems.CYANMANDO_BOOTS,
+                ModItems.CYANMANDO_LEGGINGS, ModItems.CYANMANDO_CHESTPLATE, ModItems.CYANMANDO_HELMET);
+
+        GeoArmorRenderer.registerArmorRenderer(new RedmandoArmorRenderer(), ModItems.REDMANDO_BOOTS,
+                ModItems.REDMANDO_LEGGINGS, ModItems.REDMANDO_CHESTPLATE, ModItems.REDMANDO_HELMET);
+
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ARMOR_STATION, RenderLayer.getCutout());
 

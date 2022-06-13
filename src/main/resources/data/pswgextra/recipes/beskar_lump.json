@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pswgextra:beskar_scraps"
+    },
+    {
+      "item": "pswgextra:beskar_scraps"
+    },
+    {
+      "item": "pswgextra:beskar_scraps"
+    },
+    {
+      "item": "pswgextra:beskar_scraps"
+    }
+  ],
+  "result": {
+    "item": "pswgextra:beskar_lump"
+  }
+}

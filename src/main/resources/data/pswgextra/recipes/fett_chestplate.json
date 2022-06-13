@@ -1,0 +1,14 @@
+{
+  "type": "pswgextra:armor_station",
+  "ingredients": [
+    {
+      "item": "pswgextra:beskar_chestplate"
+    },
+    {
+      "item": "pswgextra:fett_emblem"
+    }
+  ],
+  "output": {
+    "item": "pswgextra:bluemando_chestplate"
+  }
+}

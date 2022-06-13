@@ -1,0 +1,14 @@
+{
+  "type": "pswgextra:armor_station",
+  "ingredients": [
+    {
+      "item": "pswgextra:beskar_helmet"
+    },
+    {
+      "item": "pswgextra:super_commando_emblem"
+    }
+  ],
+  "output": {
+    "item": "pswgextra:redmando_helmet"
+  }
+}

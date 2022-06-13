@@ -9,9 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import trep.pswgextra.mod.PswgExtra;
 import trep.pswgextra.mod.entity.ModEntities;
-import trep.pswgextra.mod.items.custom.InquisitorArmorItem;
-import trep.pswgextra.mod.items.custom.ModArmorItem;
-import trep.pswgextra.mod.items.custom.TempleguardArmorItem;
+import trep.pswgextra.mod.items.custom.*;
 
 public class ModItems {
 
@@ -26,34 +24,53 @@ public class ModItems {
 	public static final Item BESKAR_ALLOY = registerItem("beskar_alloy", 
 		new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 
+	public static final Item BESKAR_SCRAPS = registerItem("beskar_scraps",
+			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+	public static final Item BESKAR_LUMP = registerItem("beskar_lump",
+			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+
+	public static final Item EMBLEM = registerItem("emblem",
+			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+	public static final Item FETT_EMBLEM = registerItem("fett_emblem",
+			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+	public static final Item DEATH_WATCH_EMBLEM = registerItem("death_watch_emblem",
+			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+	public static final Item SUPER_COMMANDO_EMBLEM = registerItem("super_commando_emblem",
+			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
 
 
 	public static final Item BESKAR_HELMET = registerItem("beskar_helmet", 
-		new ArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.HEAD,
+		new BeskaralloyArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.HEAD,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item BESKAR_CHESTPLATE = registerItem("beskar_chestplate", 
-		new ArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.CHEST,
+		new BeskaralloyArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.CHEST,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item BESKAR_LEGGINGS = registerItem("beskar_leggings", 
-		new ArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.LEGS,
+		new BeskaralloyArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.LEGS,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item BESKAR_BOOTS = registerItem("beskar_boots", 
-		new ArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.FEET,
+		new BeskaralloyArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.FEET,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));									
 
 
 
 	public static final Item REDMANDO_HELMET = registerItem("redmando_helmet", 
-		new ArmorItem(ModArmorMaterial.REDMANDO, EquipmentSlot.HEAD,
+		new RedmandoArmorItem(ModArmorMaterial.REDMANDO, EquipmentSlot.HEAD,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item REDMANDO_CHESTPLATE = registerItem("redmando_chestplate", 
-		new ArmorItem(ModArmorMaterial.REDMANDO, EquipmentSlot.CHEST,
+		new RedmandoArmorItem(ModArmorMaterial.REDMANDO, EquipmentSlot.CHEST,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item REDMANDO_LEGGINGS = registerItem("redmando_leggings", 
-		new ArmorItem(ModArmorMaterial.REDMANDO, EquipmentSlot.LEGS,
+		new RedmandoArmorItem(ModArmorMaterial.REDMANDO, EquipmentSlot.LEGS,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item REDMANDO_BOOTS = registerItem("redmando_boots", 
-		new ArmorItem(ModArmorMaterial.REDMANDO, EquipmentSlot.FEET,
+		new RedmandoArmorItem(ModArmorMaterial.REDMANDO, EquipmentSlot.FEET,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));						
 
 
@@ -96,16 +113,16 @@ public class ModItems {
 
 
 	public static final Item BLUEMANDO_HELMET = registerItem("bluemando_helmet", 
-		new ArmorItem(ModArmorMaterial.BLUEMANDO, EquipmentSlot.HEAD,
+		new BluemandoArmorItem(ModArmorMaterial.BLUEMANDO, EquipmentSlot.HEAD,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item BLUEMANDO_CHESTPLATE = registerItem("bluemando_chestplate", 
-		new ArmorItem(ModArmorMaterial.BLUEMANDO, EquipmentSlot.CHEST,
+		new BluemandoArmorItem(ModArmorMaterial.BLUEMANDO, EquipmentSlot.CHEST,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item BLUEMANDO_LEGGINGS = registerItem("bluemando_leggings", 
-		new ArmorItem(ModArmorMaterial.BLUEMANDO, EquipmentSlot.LEGS,
+		new BluemandoArmorItem(ModArmorMaterial.BLUEMANDO, EquipmentSlot.LEGS,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item BLUEMANDO_BOOTS = registerItem("bluemando_boots", 
-		new ArmorItem(ModArmorMaterial.BLUEMANDO, EquipmentSlot.FEET,
+		new BluemandoArmorItem(ModArmorMaterial.BLUEMANDO, EquipmentSlot.FEET,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));						
 
 
@@ -114,16 +131,16 @@ public class ModItems {
 
 
 	public static final Item CYANMANDO_HELMET = registerItem("cyanmando_helmet", 
-		new ArmorItem(ModArmorMaterial.CYANMANDO, EquipmentSlot.HEAD,
+		new CyanmandoArmorItem(ModArmorMaterial.CYANMANDO, EquipmentSlot.HEAD,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item CYANMANDO_CHESTPLATE = registerItem("cyanmando_chestplate", 
-		new ArmorItem(ModArmorMaterial.CYANMANDO, EquipmentSlot.CHEST,
+		new CyanmandoArmorItem(ModArmorMaterial.CYANMANDO, EquipmentSlot.CHEST,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item CYANMANDO_LEGGINGS = registerItem("cyanmando_leggings", 
-		new ArmorItem(ModArmorMaterial.CYANMANDO, EquipmentSlot.LEGS,
+		new CyanmandoArmorItem(ModArmorMaterial.CYANMANDO, EquipmentSlot.LEGS,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 	public static final Item CYANMANDO_BOOTS = registerItem("cyanmando_boots", 
-		new ArmorItem(ModArmorMaterial.CYANMANDO, EquipmentSlot.FEET,
+		new CyanmandoArmorItem(ModArmorMaterial.CYANMANDO, EquipmentSlot.FEET,
 			new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 
 

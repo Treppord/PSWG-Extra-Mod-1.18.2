@@ -10,10 +10,10 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
 
 public enum ModArmorMaterial implements ArmorMaterial{
-    BESKAR("beskar", 15, new int[]{3, 6, 7, 3},
+    BESKAR("beskar", 15, new int[]{2, 5, 6, 2},
             9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.BESKAR_ALLOY)),
 
-    REDMANDO("redmando", 15, new int[]{2, 5, 6, 2},
+    REDMANDO("redmando", 15, new int[]{3, 6, 7, 3},
             9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.BESKAR_ALLOY)),
 
     JEDI("jedi", 15, new int[]{1, 4, 5, 2}, 9,
@@ -22,10 +22,10 @@ public enum ModArmorMaterial implements ArmorMaterial{
     SITH("sith", 15, new int[]{1, 5, 6, 2}, 9,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.BESKAR_ALLOY)),
 
-    BLUEMANDO("bluemando", 15, new int[]{2, 5, 6, 2},
+    BLUEMANDO("bluemando", 15, new int[]{3, 6, 7, 3},
             9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.BESKAR_ALLOY)),
 
-    CYANMANDO("cyanmando", 15, new int[]{2, 5, 6, 2},
+    CYANMANDO("cyanmando", 15, new int[]{3, 6, 7, 3},
             9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.BESKAR_ALLOY)),
 
     INQUISITOR("inquisitor", 15, new int[]{2, 5, 6, 2},

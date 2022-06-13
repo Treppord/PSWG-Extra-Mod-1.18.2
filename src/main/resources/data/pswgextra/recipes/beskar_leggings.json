@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "pswgextra:beskar_alloy"
+    }
+  },
+  "result": {
+    "item": "pswgextra:beskar_leggings"
+  }
+}

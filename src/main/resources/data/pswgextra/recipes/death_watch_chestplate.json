@@ -1,0 +1,14 @@
+{
+  "type": "pswgextra:armor_station",
+  "ingredients": [
+    {
+      "item": "pswgextra:beskar_chestplate"
+    },
+    {
+      "item": "pswgextra:death_watch_emblem"
+    }
+  ],
+  "output": {
+    "item": "pswgextra:cyanmando_chestplate"
+  }
+}
