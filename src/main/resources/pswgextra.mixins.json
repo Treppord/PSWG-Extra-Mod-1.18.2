@@ -4,6 +4,7 @@
   "package": "trep.pswgextra.mod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "StructureFeatureAccessor"
   ],
   "client": [
     "ExampleMixin"

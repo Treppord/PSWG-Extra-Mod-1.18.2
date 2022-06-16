@@ -2,18 +2,16 @@ package trep.pswgextra.mod;
 
 import net.fabricmc.api.ModInitializer;
 import software.bernie.geckolib3.GeckoLib;
-import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 import trep.pswgextra.mod.block.ModBlocks;
 import trep.pswgextra.mod.block.entity.ModBlockEntities;
-import trep.pswgextra.mod.entity.ModEntities;
-import trep.pswgextra.mod.entity.client.DroidgeneralRenderer;
-import trep.pswgextra.mod.entity.client.armor.InquisitorArmorRenderer;
 import trep.pswgextra.mod.items.ModItems;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import trep.pswgextra.mod.recipe.ModRecipes;
 import trep.pswgextra.mod.util.ModRegistries;
+import trep.pswgextra.mod.world.dimension.ModDimensions;
+import trep.pswgextra.mod.world.structure.ModStructures;
 
 public class PswgExtra implements ModInitializer {
 
@@ -34,11 +32,14 @@ public class PswgExtra implements ModInitializer {
 	ModBlockEntities.registerAllBlockEntities();
 	ModRecipes.registerRecipes();
 
+	ModDimensions.register();
+	ModStructures.registerStructureFeatures();
 
 
 
 
 	GeckoLib.initialize();
+
 
 
 	}
