@@ -44,6 +44,15 @@ public class ModItems {
 			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 
 
+	public static final Item BRONZE_CREDIT = registerItem("bronze_credit",
+			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+	public static final Item SILVER_CREDIT = registerItem("silver_credit",
+			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+	public static final Item GOLD_CREDIT = registerItem("gold_credit",
+			new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
 
 	public static final Item BESKAR_HELMET = registerItem("beskar_helmet", 
 		new BeskaralloyArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.HEAD,

@@ -14,7 +14,7 @@ public class DroidgeneralRenderer extends GeoEntityRenderer<DroidgeneralEntity> 
 
     @Override
     public Identifier getTextureLocation(DroidgeneralEntity instance) {
-        return new Identifier(PswgExtra.MOD_ID, "textures/entity/droidgeneral/droidgeneral.png");
+        return new Identifier(PswgExtra.MOD_ID, "textures/entity/droidgeneral/droid_general.png");
     }
 }
 

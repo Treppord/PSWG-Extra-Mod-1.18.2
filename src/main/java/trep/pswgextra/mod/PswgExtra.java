@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import trep.pswgextra.mod.recipe.ModRecipes;
 import trep.pswgextra.mod.util.ModRegistries;
+import trep.pswgextra.mod.villager.ModVillagers;
 import trep.pswgextra.mod.world.dimension.ModDimensions;
 import trep.pswgextra.mod.world.structure.ModStructures;
 
@@ -34,6 +35,8 @@ public class PswgExtra implements ModInitializer {
 
 	ModDimensions.register();
 	ModStructures.registerStructureFeatures();
+	ModVillagers.setupPOIs();
+
 
 
 
