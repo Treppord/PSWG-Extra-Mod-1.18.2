@@ -65,6 +65,12 @@ public class ArmorStationBlockEntity extends BlockEntity implements NamedScreenH
         };
     }
 
+
+    @Override
+    public DefaultedList<ItemStack> getItems() {
+        return inventory;
+    }
+
     @Override
     public Text getDisplayName() {
         return new LiteralText("Armor Crafting Station");
@@ -76,10 +82,6 @@ public class ArmorStationBlockEntity extends BlockEntity implements NamedScreenH
         return new ArmorStationScreenHandler(syncId, inv, this, this.propertyDelegate);
     }
 
-    @Override
-    public DefaultedList<ItemStack> getItems() {
-        return inventory;
-    }
 
 
     @Override

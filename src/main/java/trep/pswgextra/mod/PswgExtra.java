@@ -9,6 +9,7 @@ import trep.pswgextra.mod.items.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import trep.pswgextra.mod.recipe.ModRecipes;
+import trep.pswgextra.mod.screen.ModScreenHandlers;
 import trep.pswgextra.mod.util.ModRegistries;
 import trep.pswgextra.mod.villager.ModVillagers;
 import trep.pswgextra.mod.world.dimension.ModDimensions;
@@ -36,6 +37,7 @@ public class PswgExtra implements ModInitializer {
 	ModDimensions.register();
 	ModStructures.registerStructureFeatures();
 	ModVillagers.setupPOIs();
+	ModScreenHandlers.registerAllScreenHandlers();
 
 
 

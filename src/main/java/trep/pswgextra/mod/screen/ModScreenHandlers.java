@@ -6,7 +6,10 @@ import net.minecraft.util.Identifier;
 import trep.pswgextra.mod.PswgExtra;
 
 public class ModScreenHandlers {
-    public static ScreenHandlerType<ArmorStationScreenHandler> ARMOR_STATION_SCREEN_HANDLER =
-            ScreenHandlerRegistry.registerSimple(new Identifier(PswgExtra.MOD_ID, "armor_station"),
-                    ArmorStationScreenHandler::new);
+    public static ScreenHandlerType<ArmorStationScreenHandler> ARMOR_STATION_SCREEN_HANDLER;
+    public static void registerAllScreenHandlers() {
+        ARMOR_STATION_SCREEN_HANDLER =
+                ScreenHandlerRegistry.registerSimple(new Identifier(PswgExtra.MOD_ID, "armor_station"),
+                        ArmorStationScreenHandler::new);
+    }
 }
