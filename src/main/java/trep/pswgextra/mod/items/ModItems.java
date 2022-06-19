@@ -183,6 +183,34 @@ public class ModItems {
 			new TempleguardArmorItem(ModArmorMaterial.TEMPLEGUARD, EquipmentSlot.FEET,
 					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 
+	public static final Item SNOWTROOPER_HELMET = registerItem("snowtrooper_helmet",
+			new SnowtrooperArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.HEAD,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+	public static final Item SNOWTROOPER_CHESTPLATE = registerItem("snowtrooper_chestplate",
+			new SnowtrooperArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.CHEST,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+	public static final Item SNOWTROOPER_LEGGINGS = registerItem("snowtrooper_leggings",
+			new SnowtrooperArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.LEGS,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+	public static final Item SNOWTROOPER_BOOTS = registerItem("snowtrooper_boots",
+			new SnowtrooperArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.FEET,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+
+	public static final Item HOTHREBEL_HELMET = registerItem("hothrebel_helmet",
+			new HothrebelArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.HEAD,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+	public static final Item HOTHREBEL_CHESTPLATE = registerItem("hothrebel_chestplate",
+			new HothrebelArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.CHEST,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+	public static final Item HOTHREBEL_LEGGINGS = registerItem("hothrebel_leggings",
+			new HothrebelArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.LEGS,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
+	public static final Item HOTHREBEL_BOOTS = registerItem("hothrebel_boots",
+			new HothrebelArmorItem(ModArmorMaterial.BESKAR, EquipmentSlot.FEET,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
+
 
 
 

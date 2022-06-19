@@ -37,6 +37,12 @@ public class PswgExtraClientMod implements ClientModInitializer {
         GeoArmorRenderer.registerArmorRenderer(new RedmandoArmorRenderer(), ModItems.REDMANDO_BOOTS,
                 ModItems.REDMANDO_LEGGINGS, ModItems.REDMANDO_CHESTPLATE, ModItems.REDMANDO_HELMET);
 
+        GeoArmorRenderer.registerArmorRenderer(new SnowtrooperArmorRenderer(), ModItems.SNOWTROOPER_BOOTS,
+                ModItems.SNOWTROOPER_LEGGINGS, ModItems.SNOWTROOPER_CHESTPLATE, ModItems.SNOWTROOPER_HELMET);
+
+        GeoArmorRenderer.registerArmorRenderer(new HothrebelArmorRenderer(), ModItems.HOTHREBEL_BOOTS,
+                ModItems.HOTHREBEL_LEGGINGS, ModItems.HOTHREBEL_CHESTPLATE, ModItems.HOTHREBEL_HELMET);
+
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ARMOR_STATION, RenderLayer.getCutout());
 
