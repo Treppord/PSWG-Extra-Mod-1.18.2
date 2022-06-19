@@ -13,6 +13,7 @@ import trep.pswgextra.mod.screen.ModScreenHandlers;
 import trep.pswgextra.mod.util.ModRegistries;
 import trep.pswgextra.mod.villager.ModVillagers;
 import trep.pswgextra.mod.world.dimension.ModDimensions;
+import trep.pswgextra.mod.world.gen.ModWorldGen;
 import trep.pswgextra.mod.world.structure.ModStructures;
 
 public class PswgExtra implements ModInitializer {
@@ -30,8 +31,11 @@ public class PswgExtra implements ModInitializer {
 
 	ModItems.registerModItems();
 	ModRegistries.registerModStuffs();
+
 	ModBlocks.registerModBlocks();
 	ModBlockEntities.registerAllBlockEntities();
+
+	ModWorldGen.generateModWorldGen();
 	ModRecipes.registerRecipes();
 
 	ModDimensions.register();

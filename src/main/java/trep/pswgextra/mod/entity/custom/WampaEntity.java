@@ -6,9 +6,9 @@ import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.mob.ZombifiedPiglinEntity;
-import net.minecraft.entity.passive.*;
+import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
@@ -24,12 +24,10 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-import java.util.function.Predicate;
-
-public class DroidgeneralEntity extends AnimalEntity implements IAnimatable {
+public class WampaEntity extends AnimalEntity implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
 
-    public DroidgeneralEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public WampaEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -44,7 +42,7 @@ public class DroidgeneralEntity extends AnimalEntity implements IAnimatable {
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return AnimalEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 20.0D)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 40.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3f);
@@ -71,11 +69,11 @@ public class DroidgeneralEntity extends AnimalEntity implements IAnimatable {
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.droidgeneral.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.wampa.walk", true));
             return PlayState.CONTINUE;
         }
 
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.droidgeneral.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.wampa.idle", true));
         return PlayState.CONTINUE;
     }
 
@@ -96,22 +94,22 @@ public class DroidgeneralEntity extends AnimalEntity implements IAnimatable {
 
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.ENTITY_WANDERING_TRADER_YES;
+        return SoundEvents.ENTITY_POLAR_BEAR_AMBIENT;
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {
-        return SoundEvents.BLOCK_METAL_HIT;
+        return SoundEvents.ENTITY_POLAR_BEAR_HURT;
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.BLOCK_ANVIL_BREAK;
+        return SoundEvents.ENTITY_POLAR_BEAR_DEATH;
     }
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {
-        this.playSound(SoundEvents.BLOCK_METAL_STEP, 0.15f, 1.0f);
+        this.playSound(SoundEvents.BLOCK_SNOW_STEP, 0.15f, 1.0f);
     }
 
 }

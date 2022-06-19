@@ -9,6 +9,7 @@ import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 import trep.pswgextra.mod.block.ModBlocks;
 import trep.pswgextra.mod.entity.ModEntities;
 import trep.pswgextra.mod.entity.client.DroidgeneralRenderer;
+import trep.pswgextra.mod.entity.client.WampaRenderer;
 import trep.pswgextra.mod.entity.client.armor.*;
 import trep.pswgextra.mod.items.ModItems;
 import trep.pswgextra.mod.screen.ArmorStationScreen;
@@ -41,6 +42,7 @@ public class PswgExtraClientMod implements ClientModInitializer {
 
 
         EntityRendererRegistry.register(ModEntities.DROIDGENERAL, DroidgeneralRenderer::new);
+        EntityRendererRegistry.register(ModEntities.WAMPA, WampaRenderer::new);
 
         ScreenRegistry.register(ModScreenHandlers.ARMOR_STATION_SCREEN_HANDLER, ArmorStationScreen::new);
 

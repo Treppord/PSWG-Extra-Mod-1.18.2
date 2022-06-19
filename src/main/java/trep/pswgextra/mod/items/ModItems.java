@@ -20,6 +20,10 @@ public class ModItems {
 					new SpawnEggItem(ModEntities.DROIDGENERAL,0x558e8d, 0x2b1135,
 						new FabricItemSettings().group(ModItemGroup.PSWGEXTRA).maxCount(1)));
 
+	public static final Item WAMPA_SPAWN_EGG = registerItem("wampa_spawn_egg",
+			new SpawnEggItem(ModEntities.WAMPA,0x111e1d, 0x1b1111,
+					new FabricItemSettings().group(ModItemGroup.PSWGEXTRA).maxCount(1)));
+
 
 	public static final Item BESKAR_ALLOY = registerItem("beskar_alloy", 
 		new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));

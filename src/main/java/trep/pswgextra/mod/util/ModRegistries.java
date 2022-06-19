@@ -7,6 +7,7 @@ import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import trep.pswgextra.mod.entity.ModEntities;
 import trep.pswgextra.mod.entity.custom.DroidgeneralEntity;
+import trep.pswgextra.mod.entity.custom.WampaEntity;
 import trep.pswgextra.mod.items.ModItems;
 import trep.pswgextra.mod.villager.ModVillagers;
 
@@ -18,6 +19,7 @@ public class ModRegistries {
 
     private static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntities.DROIDGENERAL, DroidgeneralEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.WAMPA, WampaEntity.setAttributes());
     }
 
     private static void registerCustomTrades() {
