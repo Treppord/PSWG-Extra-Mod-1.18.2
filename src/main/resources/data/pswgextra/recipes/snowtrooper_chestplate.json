@@ -1,0 +1,14 @@
+{
+  "type": "pswgextra:armor_station",
+  "ingredients": [
+    {
+      "item": "pswgextra:wampa_hide"
+    },
+    {
+      "item": "pswg:stormtrooper_chestplate"
+    }
+  ],
+  "output": {
+    "item": "pswgextra:snowtrooper_chestplate"
+  }
+}

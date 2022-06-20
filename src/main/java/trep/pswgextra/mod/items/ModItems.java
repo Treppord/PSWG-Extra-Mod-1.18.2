@@ -13,7 +13,7 @@ import trep.pswgextra.mod.items.custom.*;
 
 public class ModItems {
 
-	public static final Item BANTHA_HIDE = registerItem("bantha_hide", 
+	public static final Item WAMPA_HIDE = registerItem("wampa_hide",
 		new Item(new FabricItemSettings().group(ModItemGroup.PSWGEXTRA)));
 
 	public static final Item DROIDGENERAL_SPAWN_EGG = registerItem("droidgeneral_spawn_egg",

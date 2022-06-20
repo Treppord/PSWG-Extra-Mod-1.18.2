@@ -1,5 +1,5 @@
 {
-	"item.pswgextra.bantha_hide": "Bantha Hide",
+	"item.pswgextra.wampa_hide": "Wampa Hide",
 	"item.pswgextra.beskar_alloy": "Beskar Alloy",
 	"itemGroup.pswgextra.pswgextra": "PSWG Extra",
 
@@ -74,6 +74,12 @@
 	"item.pswgextra.fett_emblem": "Fett Emblem",
 	"item.pswgextra.death_watch_emblem": "Death Watch Emblem",
 	"item.pswgextra.super_commando_emblem": "Super Commando Emblem",
+
+
+	"item.pswgextra.hothrebel_helmet": "Hoth Rebel Helmet",
+	"item.pswgextra.hothrebel_chestplate": "Hoth Rebel Chestplate",
+	"item.pswgextra.hothrebel_leggings": "Hoth Rebel Leggings",
+	"item.pswgextra.hothrebel_boots": "Hoth Rebel Boots",
 
 
 
